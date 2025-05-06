@@ -1,15 +1,12 @@
-const waitForVueTheMask = () => {
-  return new Promise((resolve) => {
+export default async () => {
+  // Esperar a que VueTheMask esté disponible
+  await new Promise((resolve) => {
     const check = () => {
-      if (window.VueTheMask) resolve();
+      if (window.VueTheMask?.mask) resolve();
       else setTimeout(check, 50);
     };
     check();
   });
-};
-
-export default async () => {
-  await waitForVueTheMask();
 
   return {
     props: {
@@ -25,10 +22,10 @@ export default async () => {
       };
     },
     directives: {
-      mask: VueTheMask.mask,
+      mask: window.VueTheMask.mask,
     },
     async mounted() {
-      const res = await fetch('./combined_countries_with_masks_filled.json');
+      const res = await fetch("./combined_countries_with_masks_filled.json");
       this.countries = await res.json();
       this.setMask();
     },
@@ -38,7 +35,9 @@ export default async () => {
         this.$emit("update:country", this.selectedCountryCode);
       },
       setMask() {
-        const country = this.countries.find(c => c.code === this.selectedCountryCode);
+        const country = this.countries.find(
+          (c) => c.code === this.selectedCountryCode
+        );
         this.currentMask = country?.mask || "####################";
       },
     },
