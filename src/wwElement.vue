@@ -452,9 +452,9 @@ font-family: inherit;
 .selected-country {
 display: flex;
 align-items: center;
-padding: 16px 12px;
-border: 1px solid #d9d9d9;
-border-radius: 8px;
+padding: 12px;
+border: 1px solid #D0D5DD;
+border-radius: 6px;
 cursor: pointer;
 background-color: #fff;
 transition: all 0.3s;
@@ -483,13 +483,13 @@ white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
 /* Body 1 */
-font-family: 'Poppins';
+font-family:League Spartan;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 /* Neutros/Gris 1 */
-color: #333333;
+color: #020234;
 }
 
 .dropdown-arrow {
@@ -513,25 +513,25 @@ width: 250px;
 max-height: 300px;
 overflow-y: auto;
 background-color: #fff;
-border: 1px solid #CCCCCC;
-border-radius: 8px;
+border: 1px solid #D0D5DD;
+border-radius: 6px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 z-index: 1000;
 margin-top: 4px; 
 
 .search-container {
 padding: 8px;
-border-bottom: 1px solid #CCCCCC;
+border-bottom: 1px solid #D0D5DD;
 
 .search-input {
 width: 100%;
 padding: 6px 8px;
-border: 1px solid #CCCCCC;
+border: 1px solid #D0D5DD;
 border-radius: 4px;
 font-size: 14px;
 
 &:focus {
-border-color: #87CEEB;
+border-color: #58BE9B;
 outline: none;
 box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
 }
@@ -547,7 +547,7 @@ cursor: pointer;
 transition: background-color 0.3s;
 
 &:hover {
-background-color: #f5f5f5;
+background-color: #E2DDD6;
 }
 
 .flag-container {
@@ -570,7 +570,7 @@ text-overflow: ellipsis;
 
 .country-dial-code {
 font-size: 14px;
-color:#333333;
+color:#020234;
 margin-left: 8px;
 }
 }
