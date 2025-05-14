@@ -487,7 +487,7 @@ font-family:League Spartan;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 24px;
+line-height: 16px;
 /* Neutros/Gris 1 */
 color: #020234;
 }
