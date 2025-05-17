@@ -489,9 +489,10 @@ font-family:League Spartan;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 16px;
+line-height: 20px;
 /* Neutros/Gris 1 */
 color: #020234;
+text-align: center;
 }
 
 .dropdown-arrow {
