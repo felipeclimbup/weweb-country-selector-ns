@@ -460,6 +460,8 @@ background-color: #fff;
 transition: all 0.3s;
 height: 48px;
 justify-content: space-between;
+align-self: center;
+  
 
 &:hover {
 border-color: #CCCCCC;
