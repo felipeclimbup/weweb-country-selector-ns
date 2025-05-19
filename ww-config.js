@@ -12,26 +12,7 @@ type: 'TextSelect',
 bindable: true,
 defaultValue: 'cl',
 section: 'settings',
-options: {
-options: [
-{ value: 'cl', label: 'Chile' },    
-{ value: 'us', label: 'United States' },
-{ value: 'gb', label: 'United Kingdom' },
-{ value: 'ca', label: 'Canada' },
-{ value: 'au', label: 'Australia' },
-{ value: 'de', label: 'Germany' },
-{ value: 'fr', label: 'France' },
-{ value: 'jp', label: 'Japan' },
-{ value: 'br', label: 'Brazil' },
-{ value: 'ru', label: 'Russia' },
-{ value: 'in', label: 'India' },
-{ value: 'cn', label: 'China' },
-{ value: 'es', label: 'Spain' },
-{ value: 'mx', label: 'Mexico' },
-{ value: 'it', label: 'Italy' },
-{ value: 'kr', label: 'South Korea'}
-]
-},
+
 /* wwEditor:start */
 bindingValidation: {
 type: 'string',
